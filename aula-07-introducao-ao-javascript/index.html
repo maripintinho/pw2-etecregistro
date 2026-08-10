@@ -12,10 +12,21 @@
     // Solicite dois números ao usuário e retorne as 4 operações básicas (soma, subtração, multiplicação e divisão)
     const num1 = Number(window.prompt("Digite o primeiro número"));
     const num2 = Number(window.prompt("Digite o segundo número"));
-    const soma = num1 + num2;
+    /*const soma = num1 + num2;
     const s = num1 - num2;
     const m = num1 * num2;
     const divi = num1 / num2;
-    document.write(`O resultado da soma é: ${soma} <br>O resultado da subtração é: ${s}<br> O resultado da multiplicação é: ${m}<br>O resultado da divisão é: ${divi}`);
+    document.write(`O resultado da soma é: ${soma} <br>O resultado da subtração é: ${s}<br> O resultado da multiplicação é: ${m}<br>O resultado da divisão é: ${divi}`);*/num1
+    let r = num1 + num2;
+    document.write('O resultado da soma é: '+r+'<br>');
+
+    r = num1 - num2;
+    document.write("O resultado da subtração é: "+r+'<br>');
+    
+    r = num1 * num2;
+    document.write(`O resultado da multiplicação é: ${r} <br>`);
+
+    r = num1 / num2;
+    document.write(`O resultado da divisão é: ${r} <br>`);
 </script>
 </html>
