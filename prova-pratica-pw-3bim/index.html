@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Diagnóstico de Servidor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <h2>Painel de Diagnóstico de Servidor</h2>
+    <div class="content">
+    <a class="text">CPU (%):</a>
+    <input type="number" name="cpuinput" class="input" id="cpuinput" min="0" max="100">
+    <button class="button" onclick="cpu()"><a class="txtbtn">Verificar uso do Cpu</a></button></div>
+
+    <div class="content">
+    <a class="text">Memória (%):</a>
+    <input type="number" name="meminput" class="input" id="meminput" min="0" max="100">
+    <button class="button" onclick="memoria()"><a class="txtbtn">Verificar uso da memória</a></button></div>
+
+    <div class="content">
+    <a class="text">Temperatura (%):</a>
+    <input type="number" name="tempinput" class="input" id="tempinput" min="0" max="100"></input>
+    <button class="button" onclick="temperatura()"><a class="txtbtn">Verificar temperatura</a></button></div>
+    
+    
+
+    <div id="resultadocontent">
+    <div class="rbckg" id="cpubckg">
+        <div class="txtresultado">Cpu: <a id="cpuresultado"></a></div>
+    </div>
+
+    <div class="rbckg" id="membackg">
+        <div class="txtresultado">Memória: <a id="memoriaresultado"></a></div>
+    </div>
+
+    <div class="rbckg" id="tempback">
+        <div class="txtresultado">Temperatura: <a id="temperaturaresultado"></a></div>
+    </div>
+
+    <button id="btnreiniciar" onClick="reiniciarServidor()"><a class="txtbtn">Reiniciar Servidor</a></button>
+    </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
